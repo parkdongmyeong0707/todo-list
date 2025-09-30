@@ -37,7 +37,7 @@ public class TodoListPanel extends JPanel implements ActionListener {
 
         ListSelectionModel listSelectionModel = textList.getSelectionModel();
         listSelectionModel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        listSelectionModel.addListSelectionListener(new  ListSelectionListener() {
+        listSelectionModel.addListSelectionListener(new ListSelectionListener() {
                                                         /**
                                                          * Called whenever the value of the selection changes.
                                                          *
@@ -48,7 +48,8 @@ public class TodoListPanel extends JPanel implements ActionListener {
                                                             selectItem(textList);
                                                         }
                                                     }
-                                                    );
+        );
+
 
         textList.addKeyListener(new java.awt.event.KeyAdapter() {
             @Override
@@ -179,6 +180,9 @@ public class TodoListPanel extends JPanel implements ActionListener {
         String text = textField.getText();
         textModel.addElement(text);
         textField.selectAll();
+    }
+
+    public void markDone() {
     }
 
 }
