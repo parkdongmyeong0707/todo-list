@@ -18,6 +18,7 @@ public class TodoList {
             jsonObject.put("task", item.replace(DONE, "").trim());
             jsonObject.put("completed", item.endsWith(DONE));
             jsonArray.put(jsonObject);
+            Task a = new Task();
         }
 
         try {

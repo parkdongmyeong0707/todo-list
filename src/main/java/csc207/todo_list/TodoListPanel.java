@@ -183,6 +183,11 @@ public class TodoListPanel extends JPanel implements ActionListener {
     }
 
     public void markDone() {
+        TodoListController a = new TodoListController();
+        JsonStorage b = new JsonStorage();
+        ScheduleTask c = new ScheduleTask();
+        Task d = new Task();
+        TodoList aa = new TodoList();
     }
 
 }
